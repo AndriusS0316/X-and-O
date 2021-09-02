@@ -41,7 +41,7 @@ button {
     display: flex;
     gap: 20px;
     position: absolute;
-    top: 17%;
+    top: 15%;
     left: 15%;
     transform: translate(-50%, -50%);
     background-color: yellowgreen;
@@ -67,7 +67,6 @@ button {
 }
 .title {
     font-size: 40px;
-    cursor: pointer;
     display: flex;
     gap: 20px;
     position: absolute;
@@ -177,6 +176,7 @@ button {
     color: orange;
 }
 
-.vienas.du.trys.keturi.penki.sesi.septyni.astuoni.devyni:hover {
+.vienas:hover, .du:hover, .trys:hover, .keturi:hover, .penki:hover, .sesi:hover, .septyni:hover, .astuoni:hover, .devyni:hover {
     background-color: yellow;
+    color: yellow;
 }
