@@ -120,6 +120,43 @@ function vienasClick() {
     } else {
         alert("Pirma pasirinkit, kieno ėjimas bus pirmas");
     }
+    if (vienas.innerText === "O" && du.innerText === "O" && trys.innerText === "O" ||
+        keturi.innerText === "O" && penki.innerText === "O" && sesi.innerText === "O" ||
+        septyni.innerText === "O" && astuoni.innerText === "O" && devyni.innerText === "O" ||
+        vienas.innerText === "O" && penki.innerText === "O" && devyni.innerText === "O" ||
+        septyni.innerText === "O" && penki.innerText === "O" && trys.innerText === "O" || 
+        vienas.innerText === "O" && keturi.innerText === "O" && septyni.innerText === "O" || 
+        du.innerText === "O" && penki.innerText === "O" && astuoni.innerText === "O" || 
+        trys.innerText === "O" && sesi.innerText === "O" && devyni.innerText === "O") {
+        title.innerText = "O laimėjo";
+        document.querySelector('.vienas').disabled = 'true';
+        document.querySelector('.du').disabled = 'true';
+        document.querySelector('.trys').disabled = 'true';
+        document.querySelector('.keturi').disabled = 'true';
+        document.querySelector('.penki').disabled = 'true';
+        document.querySelector('.sesi').disabled = 'true';
+        document.querySelector('.septyni').disabled = 'true';
+        document.querySelector('.astuoni').disabled = 'true';
+        document.querySelector('.devyni').disabled = 'true';
+    } else if (vienas.innerText === "X" && du.innerText === "X" && trys.innerText === "X" ||
+        keturi.innerText === "X" && penki.innerText === "X" && sesi.innerText === "X" ||
+        septyni.innerText === "X" && astuoni.innerText === "X" && devyni.innerText === "X" ||
+        vienas.innerText === "X" && penki.innerText === "X" && devyni.innerText === "X" ||
+        septyni.innerText === "X" && penki.innerText === "X" && trys.innerText === "X" || 
+        vienas.innerText === "X" && keturi.innerText === "X" && septyni.innerText === "X" || 
+        du.innerText === "X" && penki.innerText === "X" && astuoni.innerText === "X" || 
+        trys.innerText === "X" && sesi.innerText === "X" && devyni.innerText === "X") {
+        title.innerText = "X laimėjo";
+        document.querySelector('.vienas').disabled = 'true';
+        document.querySelector('.du').disabled = 'true';
+        document.querySelector('.trys').disabled = 'true';
+        document.querySelector('.keturi').disabled = 'true';
+        document.querySelector('.penki').disabled = 'true';
+        document.querySelector('.sesi').disabled = 'true';
+        document.querySelector('.septyni').disabled = 'true';
+        document.querySelector('.astuoni').disabled = 'true';
+        document.querySelector('.devyni').disabled = 'true';
+    }
 }
 function duClick() {
     if (patikra) {
@@ -141,6 +178,43 @@ function duClick() {
         }
     } else {
         alert("Pirma pasirinkit, kieno ėjimas bus pirmas");
+    }
+    if (vienas.innerText === "O" && du.innerText === "O" && trys.innerText === "O" ||
+        keturi.innerText === "O" && penki.innerText === "O" && sesi.innerText === "O" ||
+        septyni.innerText === "O" && astuoni.innerText === "O" && devyni.innerText === "O" ||
+        vienas.innerText === "O" && penki.innerText === "O" && devyni.innerText === "O" ||
+        septyni.innerText === "O" && penki.innerText === "O" && trys.innerText === "O" || 
+        vienas.innerText === "O" && keturi.innerText === "O" && septyni.innerText === "O" || 
+        du.innerText === "O" && penki.innerText === "O" && astuoni.innerText === "O" || 
+        trys.innerText === "O" && sesi.innerText === "O" && devyni.innerText === "O") {
+        title.innerText = "O laimėjo";
+        document.querySelector('.vienas').disabled = 'true';
+        document.querySelector('.du').disabled = 'true';
+        document.querySelector('.trys').disabled = 'true';
+        document.querySelector('.keturi').disabled = 'true';
+        document.querySelector('.penki').disabled = 'true';
+        document.querySelector('.sesi').disabled = 'true';
+        document.querySelector('.septyni').disabled = 'true';
+        document.querySelector('.astuoni').disabled = 'true';
+        document.querySelector('.devyni').disabled = 'true';
+    } else if (vienas.innerText === "X" && du.innerText === "X" && trys.innerText === "X" ||
+        keturi.innerText === "X" && penki.innerText === "X" && sesi.innerText === "X" ||
+        septyni.innerText === "X" && astuoni.innerText === "X" && devyni.innerText === "X" ||
+        vienas.innerText === "X" && penki.innerText === "X" && devyni.innerText === "X" ||
+        septyni.innerText === "X" && penki.innerText === "X" && trys.innerText === "X" || 
+        vienas.innerText === "X" && keturi.innerText === "X" && septyni.innerText === "X" || 
+        du.innerText === "X" && penki.innerText === "X" && astuoni.innerText === "X" || 
+        trys.innerText === "X" && sesi.innerText === "X" && devyni.innerText === "X") {
+        title.innerText = "X laimėjo";
+        document.querySelector('.vienas').disabled = 'true';
+        document.querySelector('.du').disabled = 'true';
+        document.querySelector('.trys').disabled = 'true';
+        document.querySelector('.keturi').disabled = 'true';
+        document.querySelector('.penki').disabled = 'true';
+        document.querySelector('.sesi').disabled = 'true';
+        document.querySelector('.septyni').disabled = 'true';
+        document.querySelector('.astuoni').disabled = 'true';
+        document.querySelector('.devyni').disabled = 'true';
     }
 }
 function trysClick() {
@@ -164,6 +238,43 @@ function trysClick() {
     } else {
         alert("Pirma pasirinkit, kieno ėjimas bus pirmas");
     }
+    if (vienas.innerText === "O" && du.innerText === "O" && trys.innerText === "O" ||
+        keturi.innerText === "O" && penki.innerText === "O" && sesi.innerText === "O" ||
+        septyni.innerText === "O" && astuoni.innerText === "O" && devyni.innerText === "O" ||
+        vienas.innerText === "O" && penki.innerText === "O" && devyni.innerText === "O" ||
+        septyni.innerText === "O" && penki.innerText === "O" && trys.innerText === "O" || 
+        vienas.innerText === "O" && keturi.innerText === "O" && septyni.innerText === "O" || 
+        du.innerText === "O" && penki.innerText === "O" && astuoni.innerText === "O" || 
+        trys.innerText === "O" && sesi.innerText === "O" && devyni.innerText === "O") {
+        title.innerText = "O laimėjo";
+        document.querySelector('.vienas').disabled = 'true';
+        document.querySelector('.du').disabled = 'true';
+        document.querySelector('.trys').disabled = 'true';
+        document.querySelector('.keturi').disabled = 'true';
+        document.querySelector('.penki').disabled = 'true';
+        document.querySelector('.sesi').disabled = 'true';
+        document.querySelector('.septyni').disabled = 'true';
+        document.querySelector('.astuoni').disabled = 'true';
+        document.querySelector('.devyni').disabled = 'true';
+    } else if (vienas.innerText === "X" && du.innerText === "X" && trys.innerText === "X" ||
+        keturi.innerText === "X" && penki.innerText === "X" && sesi.innerText === "X" ||
+        septyni.innerText === "X" && astuoni.innerText === "X" && devyni.innerText === "X" ||
+        vienas.innerText === "X" && penki.innerText === "X" && devyni.innerText === "X" ||
+        septyni.innerText === "X" && penki.innerText === "X" && trys.innerText === "X" || 
+        vienas.innerText === "X" && keturi.innerText === "X" && septyni.innerText === "X" || 
+        du.innerText === "X" && penki.innerText === "X" && astuoni.innerText === "X" || 
+        trys.innerText === "X" && sesi.innerText === "X" && devyni.innerText === "X") {
+        title.innerText = "X laimėjo";
+        document.querySelector('.vienas').disabled = 'true';
+        document.querySelector('.du').disabled = 'true';
+        document.querySelector('.trys').disabled = 'true';
+        document.querySelector('.keturi').disabled = 'true';
+        document.querySelector('.penki').disabled = 'true';
+        document.querySelector('.sesi').disabled = 'true';
+        document.querySelector('.septyni').disabled = 'true';
+        document.querySelector('.astuoni').disabled = 'true';
+        document.querySelector('.devyni').disabled = 'true';
+    }
 }
 function keturiClick() {
     if (patikra) {
@@ -185,6 +296,43 @@ function keturiClick() {
         }
     } else {
         alert("Pirma pasirinkit, kieno ėjimas bus pirmas");
+    }
+    if (vienas.innerText === "O" && du.innerText === "O" && trys.innerText === "O" ||
+        keturi.innerText === "O" && penki.innerText === "O" && sesi.innerText === "O" ||
+        septyni.innerText === "O" && astuoni.innerText === "O" && devyni.innerText === "O" ||
+        vienas.innerText === "O" && penki.innerText === "O" && devyni.innerText === "O" ||
+        septyni.innerText === "O" && penki.innerText === "O" && trys.innerText === "O" || 
+        vienas.innerText === "O" && keturi.innerText === "O" && septyni.innerText === "O" || 
+        du.innerText === "O" && penki.innerText === "O" && astuoni.innerText === "O" || 
+        trys.innerText === "O" && sesi.innerText === "O" && devyni.innerText === "O") {
+        title.innerText = "O laimėjo";
+        document.querySelector('.vienas').disabled = 'true';
+        document.querySelector('.du').disabled = 'true';
+        document.querySelector('.trys').disabled = 'true';
+        document.querySelector('.keturi').disabled = 'true';
+        document.querySelector('.penki').disabled = 'true';
+        document.querySelector('.sesi').disabled = 'true';
+        document.querySelector('.septyni').disabled = 'true';
+        document.querySelector('.astuoni').disabled = 'true';
+        document.querySelector('.devyni').disabled = 'true';
+    } else if (vienas.innerText === "X" && du.innerText === "X" && trys.innerText === "X" ||
+        keturi.innerText === "X" && penki.innerText === "X" && sesi.innerText === "X" ||
+        septyni.innerText === "X" && astuoni.innerText === "X" && devyni.innerText === "X" ||
+        vienas.innerText === "X" && penki.innerText === "X" && devyni.innerText === "X" ||
+        septyni.innerText === "X" && penki.innerText === "X" && trys.innerText === "X" || 
+        vienas.innerText === "X" && keturi.innerText === "X" && septyni.innerText === "X" || 
+        du.innerText === "X" && penki.innerText === "X" && astuoni.innerText === "X" || 
+        trys.innerText === "X" && sesi.innerText === "X" && devyni.innerText === "X") {
+        title.innerText = "X laimėjo";
+        document.querySelector('.vienas').disabled = 'true';
+        document.querySelector('.du').disabled = 'true';
+        document.querySelector('.trys').disabled = 'true';
+        document.querySelector('.keturi').disabled = 'true';
+        document.querySelector('.penki').disabled = 'true';
+        document.querySelector('.sesi').disabled = 'true';
+        document.querySelector('.septyni').disabled = 'true';
+        document.querySelector('.astuoni').disabled = 'true';
+        document.querySelector('.devyni').disabled = 'true';
     }
 }
 function penkiClick() {
@@ -208,6 +356,43 @@ function penkiClick() {
     } else {
         alert("Pirma pasirinkit, kieno ėjimas bus pirmas");
     }
+    if (vienas.innerText === "O" && du.innerText === "O" && trys.innerText === "O" ||
+        keturi.innerText === "O" && penki.innerText === "O" && sesi.innerText === "O" ||
+        septyni.innerText === "O" && astuoni.innerText === "O" && devyni.innerText === "O" ||
+        vienas.innerText === "O" && penki.innerText === "O" && devyni.innerText === "O" ||
+        septyni.innerText === "O" && penki.innerText === "O" && trys.innerText === "O" || 
+        vienas.innerText === "O" && keturi.innerText === "O" && septyni.innerText === "O" || 
+        du.innerText === "O" && penki.innerText === "O" && astuoni.innerText === "O" || 
+        trys.innerText === "O" && sesi.innerText === "O" && devyni.innerText === "O") {
+        title.innerText = "O laimėjo";
+        document.querySelector('.vienas').disabled = 'true';
+        document.querySelector('.du').disabled = 'true';
+        document.querySelector('.trys').disabled = 'true';
+        document.querySelector('.keturi').disabled = 'true';
+        document.querySelector('.penki').disabled = 'true';
+        document.querySelector('.sesi').disabled = 'true';
+        document.querySelector('.septyni').disabled = 'true';
+        document.querySelector('.astuoni').disabled = 'true';
+        document.querySelector('.devyni').disabled = 'true';
+    } else if (vienas.innerText === "X" && du.innerText === "X" && trys.innerText === "X" ||
+        keturi.innerText === "X" && penki.innerText === "X" && sesi.innerText === "X" ||
+        septyni.innerText === "X" && astuoni.innerText === "X" && devyni.innerText === "X" ||
+        vienas.innerText === "X" && penki.innerText === "X" && devyni.innerText === "X" ||
+        septyni.innerText === "X" && penki.innerText === "X" && trys.innerText === "X" || 
+        vienas.innerText === "X" && keturi.innerText === "X" && septyni.innerText === "X" || 
+        du.innerText === "X" && penki.innerText === "X" && astuoni.innerText === "X" || 
+        trys.innerText === "X" && sesi.innerText === "X" && devyni.innerText === "X") {
+        title.innerText = "X laimėjo";
+        document.querySelector('.vienas').disabled = 'true';
+        document.querySelector('.du').disabled = 'true';
+        document.querySelector('.trys').disabled = 'true';
+        document.querySelector('.keturi').disabled = 'true';
+        document.querySelector('.penki').disabled = 'true';
+        document.querySelector('.sesi').disabled = 'true';
+        document.querySelector('.septyni').disabled = 'true';
+        document.querySelector('.astuoni').disabled = 'true';
+        document.querySelector('.devyni').disabled = 'true';
+    }
 }
 function sesiClick() {
     if (patikra) {
@@ -229,6 +414,43 @@ function sesiClick() {
         }
     } else {
         alert("Pirma pasirinkit, kieno ėjimas bus pirmas");
+    }
+    if (vienas.innerText === "O" && du.innerText === "O" && trys.innerText === "O" ||
+        keturi.innerText === "O" && penki.innerText === "O" && sesi.innerText === "O" ||
+        septyni.innerText === "O" && astuoni.innerText === "O" && devyni.innerText === "O" ||
+        vienas.innerText === "O" && penki.innerText === "O" && devyni.innerText === "O" ||
+        septyni.innerText === "O" && penki.innerText === "O" && trys.innerText === "O" || 
+        vienas.innerText === "O" && keturi.innerText === "O" && septyni.innerText === "O" || 
+        du.innerText === "O" && penki.innerText === "O" && astuoni.innerText === "O" || 
+        trys.innerText === "O" && sesi.innerText === "O" && devyni.innerText === "O") {
+        title.innerText = "O laimėjo";
+        document.querySelector('.vienas').disabled = 'true';
+        document.querySelector('.du').disabled = 'true';
+        document.querySelector('.trys').disabled = 'true';
+        document.querySelector('.keturi').disabled = 'true';
+        document.querySelector('.penki').disabled = 'true';
+        document.querySelector('.sesi').disabled = 'true';
+        document.querySelector('.septyni').disabled = 'true';
+        document.querySelector('.astuoni').disabled = 'true';
+        document.querySelector('.devyni').disabled = 'true';
+    } else if (vienas.innerText === "X" && du.innerText === "X" && trys.innerText === "X" ||
+        keturi.innerText === "X" && penki.innerText === "X" && sesi.innerText === "X" ||
+        septyni.innerText === "X" && astuoni.innerText === "X" && devyni.innerText === "X" ||
+        vienas.innerText === "X" && penki.innerText === "X" && devyni.innerText === "X" ||
+        septyni.innerText === "X" && penki.innerText === "X" && trys.innerText === "X" || 
+        vienas.innerText === "X" && keturi.innerText === "X" && septyni.innerText === "X" || 
+        du.innerText === "X" && penki.innerText === "X" && astuoni.innerText === "X" || 
+        trys.innerText === "X" && sesi.innerText === "X" && devyni.innerText === "X") {
+        title.innerText = "X laimėjo";
+        document.querySelector('.vienas').disabled = 'true';
+        document.querySelector('.du').disabled = 'true';
+        document.querySelector('.trys').disabled = 'true';
+        document.querySelector('.keturi').disabled = 'true';
+        document.querySelector('.penki').disabled = 'true';
+        document.querySelector('.sesi').disabled = 'true';
+        document.querySelector('.septyni').disabled = 'true';
+        document.querySelector('.astuoni').disabled = 'true';
+        document.querySelector('.devyni').disabled = 'true';
     }
 }
 function septyniClick() {
@@ -252,6 +474,43 @@ function septyniClick() {
     } else {
         alert("Pirma pasirinkit, kieno ėjimas bus pirmas");
     }
+    if (vienas.innerText === "O" && du.innerText === "O" && trys.innerText === "O" ||
+        keturi.innerText === "O" && penki.innerText === "O" && sesi.innerText === "O" ||
+        septyni.innerText === "O" && astuoni.innerText === "O" && devyni.innerText === "O" ||
+        vienas.innerText === "O" && penki.innerText === "O" && devyni.innerText === "O" ||
+        septyni.innerText === "O" && penki.innerText === "O" && trys.innerText === "O" || 
+        vienas.innerText === "O" && keturi.innerText === "O" && septyni.innerText === "O" || 
+        du.innerText === "O" && penki.innerText === "O" && astuoni.innerText === "O" || 
+        trys.innerText === "O" && sesi.innerText === "O" && devyni.innerText === "O") {
+        title.innerText = "O laimėjo";
+        document.querySelector('.vienas').disabled = 'true';
+        document.querySelector('.du').disabled = 'true';
+        document.querySelector('.trys').disabled = 'true';
+        document.querySelector('.keturi').disabled = 'true';
+        document.querySelector('.penki').disabled = 'true';
+        document.querySelector('.sesi').disabled = 'true';
+        document.querySelector('.septyni').disabled = 'true';
+        document.querySelector('.astuoni').disabled = 'true';
+        document.querySelector('.devyni').disabled = 'true';
+    } else if (vienas.innerText === "X" && du.innerText === "X" && trys.innerText === "X" ||
+        keturi.innerText === "X" && penki.innerText === "X" && sesi.innerText === "X" ||
+        septyni.innerText === "X" && astuoni.innerText === "X" && devyni.innerText === "X" ||
+        vienas.innerText === "X" && penki.innerText === "X" && devyni.innerText === "X" ||
+        septyni.innerText === "X" && penki.innerText === "X" && trys.innerText === "X" || 
+        vienas.innerText === "X" && keturi.innerText === "X" && septyni.innerText === "X" || 
+        du.innerText === "X" && penki.innerText === "X" && astuoni.innerText === "X" || 
+        trys.innerText === "X" && sesi.innerText === "X" && devyni.innerText === "X") {
+        title.innerText = "X laimėjo";
+        document.querySelector('.vienas').disabled = 'true';
+        document.querySelector('.du').disabled = 'true';
+        document.querySelector('.trys').disabled = 'true';
+        document.querySelector('.keturi').disabled = 'true';
+        document.querySelector('.penki').disabled = 'true';
+        document.querySelector('.sesi').disabled = 'true';
+        document.querySelector('.septyni').disabled = 'true';
+        document.querySelector('.astuoni').disabled = 'true';
+        document.querySelector('.devyni').disabled = 'true';
+    }
 }
 function astuoniClick() {
     if (patikra) {
@@ -273,6 +532,43 @@ function astuoniClick() {
         }
     } else {
         alert("Pirma pasirinkit, kieno ėjimas bus pirmas");
+    }
+    if (vienas.innerText === "O" && du.innerText === "O" && trys.innerText === "O" ||
+        keturi.innerText === "O" && penki.innerText === "O" && sesi.innerText === "O" ||
+        septyni.innerText === "O" && astuoni.innerText === "O" && devyni.innerText === "O" ||
+        vienas.innerText === "O" && penki.innerText === "O" && devyni.innerText === "O" ||
+        septyni.innerText === "O" && penki.innerText === "O" && trys.innerText === "O" || 
+        vienas.innerText === "O" && keturi.innerText === "O" && septyni.innerText === "O" || 
+        du.innerText === "O" && penki.innerText === "O" && astuoni.innerText === "O" || 
+        trys.innerText === "O" && sesi.innerText === "O" && devyni.innerText === "O") {
+        title.innerText = "O laimėjo";
+        document.querySelector('.vienas').disabled = 'true';
+        document.querySelector('.du').disabled = 'true';
+        document.querySelector('.trys').disabled = 'true';
+        document.querySelector('.keturi').disabled = 'true';
+        document.querySelector('.penki').disabled = 'true';
+        document.querySelector('.sesi').disabled = 'true';
+        document.querySelector('.septyni').disabled = 'true';
+        document.querySelector('.astuoni').disabled = 'true';
+        document.querySelector('.devyni').disabled = 'true';
+    } else if (vienas.innerText === "X" && du.innerText === "X" && trys.innerText === "X" ||
+        keturi.innerText === "X" && penki.innerText === "X" && sesi.innerText === "X" ||
+        septyni.innerText === "X" && astuoni.innerText === "X" && devyni.innerText === "X" ||
+        vienas.innerText === "X" && penki.innerText === "X" && devyni.innerText === "X" ||
+        septyni.innerText === "X" && penki.innerText === "X" && trys.innerText === "X" || 
+        vienas.innerText === "X" && keturi.innerText === "X" && septyni.innerText === "X" || 
+        du.innerText === "X" && penki.innerText === "X" && astuoni.innerText === "X" || 
+        trys.innerText === "X" && sesi.innerText === "X" && devyni.innerText === "X") {
+        title.innerText = "X laimėjo";
+        document.querySelector('.vienas').disabled = 'true';
+        document.querySelector('.du').disabled = 'true';
+        document.querySelector('.trys').disabled = 'true';
+        document.querySelector('.keturi').disabled = 'true';
+        document.querySelector('.penki').disabled = 'true';
+        document.querySelector('.sesi').disabled = 'true';
+        document.querySelector('.septyni').disabled = 'true';
+        document.querySelector('.astuoni').disabled = 'true';
+        document.querySelector('.devyni').disabled = 'true';
     }
 }
 function devyniClick() {
@@ -296,7 +592,48 @@ function devyniClick() {
     } else {
         alert("Pirma pasirinkit, kieno ėjimas bus pirmas");
     }
+    if (vienas.innerText === "O" && du.innerText === "O" && trys.innerText === "O" ||
+        keturi.innerText === "O" && penki.innerText === "O" && sesi.innerText === "O" ||
+        septyni.innerText === "O" && astuoni.innerText === "O" && devyni.innerText === "O" ||
+        vienas.innerText === "O" && penki.innerText === "O" && devyni.innerText === "O" ||
+        septyni.innerText === "O" && penki.innerText === "O" && trys.innerText === "O" || 
+        vienas.innerText === "O" && keturi.innerText === "O" && septyni.innerText === "O" || 
+        du.innerText === "O" && penki.innerText === "O" && astuoni.innerText === "O" || 
+        trys.innerText === "O" && sesi.innerText === "O" && devyni.innerText === "O") {
+        title.innerText = "O laimėjo";
+        document.querySelector('.vienas').disabled = 'true';
+        document.querySelector('.du').disabled = 'true';
+        document.querySelector('.trys').disabled = 'true';
+        document.querySelector('.keturi').disabled = 'true';
+        document.querySelector('.penki').disabled = 'true';
+        document.querySelector('.sesi').disabled = 'true';
+        document.querySelector('.septyni').disabled = 'true';
+        document.querySelector('.astuoni').disabled = 'true';
+        document.querySelector('.devyni').disabled = 'true';
+    } else if (vienas.innerText === "X" && du.innerText === "X" && trys.innerText === "X" ||
+        keturi.innerText === "X" && penki.innerText === "X" && sesi.innerText === "X" ||
+        septyni.innerText === "X" && astuoni.innerText === "X" && devyni.innerText === "X" ||
+        vienas.innerText === "X" && penki.innerText === "X" && devyni.innerText === "X" ||
+        septyni.innerText === "X" && penki.innerText === "X" && trys.innerText === "X" || 
+        vienas.innerText === "X" && keturi.innerText === "X" && septyni.innerText === "X" || 
+        du.innerText === "X" && penki.innerText === "X" && astuoni.innerText === "X" || 
+        trys.innerText === "X" && sesi.innerText === "X" && devyni.innerText === "X") {
+        title.innerText = "X laimėjo";
+        document.querySelector('.vienas').disabled = 'true';
+        document.querySelector('.du').disabled = 'true';
+        document.querySelector('.trys').disabled = 'true';
+        document.querySelector('.keturi').disabled = 'true';
+        document.querySelector('.penki').disabled = 'true';
+        document.querySelector('.sesi').disabled = 'true';
+        document.querySelector('.septyni').disabled = 'true';
+        document.querySelector('.astuoni').disabled = 'true';
+        document.querySelector('.devyni').disabled = 'true';
+    }
 }
+
+
+
+
 
 
 random.addEventListener('click', randomClick);
