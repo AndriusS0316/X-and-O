@@ -166,22 +166,136 @@ function trysClick() {
     }
 }
 function keturiClick() {
-    console.log(4);
+    if (patikra) {
+        console.log(4);
+        if (randomm % 2 == 0) {
+            document.querySelector('.keturi').disabled = 'true';
+            deactivateKeturi.style.background = 'blue';
+            deactivateKeturi.style.color = 'red';
+            title.innerText = "O Move"
+            keturi.innerText = "X"
+            randomm = randomm + 1;
+        } else {
+            document.querySelector('.keturi').disabled = 'true';
+            deactivateKeturi.style.background = 'red';
+            deactivateKeturi.style.color = 'blue';
+            title.innerText = "X Move"
+            keturi.innerText = "O"
+            randomm = randomm + 1;
+        }
+    } else {
+        alert("Pirma pasirinkit, kieno ėjimas bus pirmas");
+    }
 }
 function penkiClick() {
-    console.log(5);
+    if (patikra) {
+        console.log(5);
+        if (randomm % 2 == 0) {
+            document.querySelector('.penki').disabled = 'true';
+            deactivatePenki.style.background = 'blue';
+            deactivatePenki.style.color = 'red';
+            title.innerText = "O Move"
+            penki.innerText = "X"
+            randomm = randomm + 1;
+        } else {
+            document.querySelector('.penki').disabled = 'true';
+            deactivatePenki.style.background = 'red';
+            deactivatePenki.style.color = 'blue';
+            title.innerText = "X Move"
+            penki.innerText = "O"
+            randomm = randomm + 1;
+        }
+    } else {
+        alert("Pirma pasirinkit, kieno ėjimas bus pirmas");
+    }
 }
 function sesiClick() {
-    console.log(6);
+    if (patikra) {
+        console.log(6);
+        if (randomm % 2 == 0) {
+            document.querySelector('.sesi').disabled = 'true';
+            deactivateSesi.style.background = 'blue';
+            deactivateSesi.style.color = 'red';
+            title.innerText = "O Move"
+            sesi.innerText = "X"
+            randomm = randomm + 1;
+        } else {
+            document.querySelector('.sesi').disabled = 'true';
+            deactivateSesi.style.background = 'red';
+            deactivateSesi.style.color = 'blue';
+            title.innerText = "X Move"
+            sesi.innerText = "O"
+            randomm = randomm + 1;
+        }
+    } else {
+        alert("Pirma pasirinkit, kieno ėjimas bus pirmas");
+    }
 }
 function septyniClick() {
-    console.log(7);
+    if (patikra) {
+        console.log(7);
+        if (randomm % 2 == 0) {
+            document.querySelector('.septyni').disabled = 'true';
+            deactivateSeptyni.style.background = 'blue';
+            deactivateSeptyni.style.color = 'red';
+            title.innerText = "O Move"
+            septyni.innerText = "X"
+            randomm = randomm + 1;
+        } else {
+            document.querySelector('.septyni').disabled = 'true';
+            deactivateSeptyni.style.background = 'red';
+            deactivateSeptyni.style.color = 'blue';
+            title.innerText = "X Move"
+            septyni.innerText = "O"
+            randomm = randomm + 1;
+        }
+    } else {
+        alert("Pirma pasirinkit, kieno ėjimas bus pirmas");
+    }
 }
 function astuoniClick() {
-    console.log(8);
+    if (patikra) {
+        console.log(8);
+        if (randomm % 2 == 0) {
+            document.querySelector('.astuoni').disabled = 'true';
+            deactivateAstuoni.style.background = 'blue';
+            deactivateAstuoni.style.color = 'red';
+            title.innerText = "O Move"
+            astuoni.innerText = "X"
+            randomm = randomm + 1;
+        } else {
+            document.querySelector('.astuoni').disabled = 'true';
+            deactivateAstuoni.style.background = 'red';
+            deactivateAstuoni.style.color = 'blue';
+            title.innerText = "X Move"
+            astuoni.innerText = "O"
+            randomm = randomm + 1;
+        }
+    } else {
+        alert("Pirma pasirinkit, kieno ėjimas bus pirmas");
+    }
 }
 function devyniClick() {
-    console.log(9);
+    if (patikra) {
+        console.log(9);
+        if (randomm % 2 == 0) {
+            document.querySelector('.devyni').disabled = 'true';
+            deactivateDevyni.style.background = 'blue';
+            deactivateDevyni.style.color = 'red';
+            title.innerText = "O Move"
+            devyni.innerText = "X"
+            randomm = randomm + 1;
+        } else {
+            document.querySelector('.devyni').disabled = 'true';
+            deactivateDevyni.style.background = 'red';
+            deactivateDevyni.style.color = 'blue';
+            title.innerText = "X Move"
+            devyni.innerText = "O"
+            randomm = randomm + 1;
+        }
+    } else {
+        alert("Pirma pasirinkit, kieno ėjimas bus pirmas");
+    }
 }
 
 
