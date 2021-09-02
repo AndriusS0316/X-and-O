@@ -44,6 +44,12 @@ let deactivateAstuoni = document.querySelector('.astuoni');
 let deactivateDevyni = document.querySelector('.devyni');
 
 
+let newGame = document.querySelector('.new_game');
+
+let deactivateNewGame = document.querySelector('.new_game');
+document.querySelector('.new_game').disabled = 'true';
+deactivateNewGame.style.background = 'grey';
+
 
 function randomClick() {
     rez = (Math.floor(Math.random() * 10) + 1);
@@ -66,6 +72,9 @@ function randomClick() {
     deactivateRandom.style.background = 'grey';
     deactivateX.style.background = 'grey';
     deactivateO.style.background = 'grey';
+
+    document.querySelector('.new_game').disabled = 'false';
+    deactivateNewGame.style.background = false;
 }
 
 
@@ -631,7 +640,9 @@ function devyniClick() {
     }
 }
 
-
+function newGameClick() {
+    console.log("wertyui");
+}
 
 
 
@@ -651,3 +662,5 @@ sesi.addEventListener('click', sesiClick);
 septyni.addEventListener('click', septyniClick);
 astuoni.addEventListener('click', astuoniClick);
 devyni.addEventListener('click', devyniClick);
+
+newGame.addEventListener('click', newGameClick);

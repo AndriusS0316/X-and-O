@@ -180,3 +180,19 @@ button {
     background-color: yellow;
     color: yellow;
 }
+
+.new_game {
+    cursor: pointer;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: yellowgreen;
+    color: black;
+    font-size: 40px;
+}
+.new_game:hover {
+    background-color: turquoise;
+}
