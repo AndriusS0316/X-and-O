@@ -2,6 +2,7 @@
 let rez = 0;
 let randomm;
 let patikra = false;
+let newGameSauga = true;
 
 
 
@@ -44,11 +45,6 @@ let deactivateAstuoni = document.querySelector('.astuoni');
 let deactivateDevyni = document.querySelector('.devyni');
 
 
-let newGame = document.querySelector('.new_game');
-
-let deactivateNewGame = document.querySelector('.new_game');
-document.querySelector('.new_game').disabled = 'true';
-deactivateNewGame.style.background = 'grey';
 
 
 function randomClick() {
@@ -73,12 +69,21 @@ function randomClick() {
     deactivateX.style.background = 'grey';
     deactivateO.style.background = 'grey';
 
-    document.querySelector('.new_game').disabled = 'false';
-    deactivateNewGame.style.background = false;
+    newGameSauga = false;
+
+    if (newGameSauga) {
+        document.querySelector('.new_game').disabled = true;
+        deactivateNewGame.style.background = 'grey';
+    } else {
+        document.querySelector('.new_game').disabled = false;
+        deactivateNewGame.style.background = 'yellowgreen';
+    }
 }
 
 
 function xClick() {
+    console.log("X");
+
     title.innerText = "X Move";
     randomm = 2;
     document.querySelector('.random').disabled = 'true';
@@ -90,10 +95,21 @@ function xClick() {
     deactivateO.style.background = 'grey';
 
     patikra = true;
+    newGameSauga = false;
+
+    if (newGameSauga) {
+        document.querySelector('.new_game').disabled = true;
+        deactivateNewGame.style.background = 'grey';
+    } else {
+        document.querySelector('.new_game').disabled = false;
+        deactivateNewGame.style.background = 'yellowgreen';
+    }
 }
 
 
 function oClick() {
+    console.log("O");
+
     title.innerText = "O Move";
     randomm = 3;
     document.querySelector('.random').disabled = 'true';
@@ -105,7 +121,28 @@ function oClick() {
     deactivateO.style.background = 'grey';
 
     patikra = true;
+    newGameSauga = false;
+
+    if (newGameSauga) {
+        document.querySelector('.new_game').disabled = true;
+        deactivateNewGame.style.background = 'grey';
+    } else {
+        document.querySelector('.new_game').disabled = false;
+        deactivateNewGame.style.background = 'yellowgreen';
+    }
 }
+
+
+
+let newGame = document.querySelector('.new_game');
+
+let deactivateNewGame = document.querySelector('.new_game');
+
+if (newGameSauga) {
+    document.querySelector('.new_game').disabled = true;
+    deactivateNewGame.style.background = 'grey';
+}
+
 
 
 function vienasClick() {
@@ -133,9 +170,9 @@ function vienasClick() {
         keturi.innerText === "O" && penki.innerText === "O" && sesi.innerText === "O" ||
         septyni.innerText === "O" && astuoni.innerText === "O" && devyni.innerText === "O" ||
         vienas.innerText === "O" && penki.innerText === "O" && devyni.innerText === "O" ||
-        septyni.innerText === "O" && penki.innerText === "O" && trys.innerText === "O" || 
-        vienas.innerText === "O" && keturi.innerText === "O" && septyni.innerText === "O" || 
-        du.innerText === "O" && penki.innerText === "O" && astuoni.innerText === "O" || 
+        septyni.innerText === "O" && penki.innerText === "O" && trys.innerText === "O" ||
+        vienas.innerText === "O" && keturi.innerText === "O" && septyni.innerText === "O" ||
+        du.innerText === "O" && penki.innerText === "O" && astuoni.innerText === "O" ||
         trys.innerText === "O" && sesi.innerText === "O" && devyni.innerText === "O") {
         title.innerText = "O laimėjo";
         document.querySelector('.vienas').disabled = 'true';
@@ -151,9 +188,9 @@ function vienasClick() {
         keturi.innerText === "X" && penki.innerText === "X" && sesi.innerText === "X" ||
         septyni.innerText === "X" && astuoni.innerText === "X" && devyni.innerText === "X" ||
         vienas.innerText === "X" && penki.innerText === "X" && devyni.innerText === "X" ||
-        septyni.innerText === "X" && penki.innerText === "X" && trys.innerText === "X" || 
-        vienas.innerText === "X" && keturi.innerText === "X" && septyni.innerText === "X" || 
-        du.innerText === "X" && penki.innerText === "X" && astuoni.innerText === "X" || 
+        septyni.innerText === "X" && penki.innerText === "X" && trys.innerText === "X" ||
+        vienas.innerText === "X" && keturi.innerText === "X" && septyni.innerText === "X" ||
+        du.innerText === "X" && penki.innerText === "X" && astuoni.innerText === "X" ||
         trys.innerText === "X" && sesi.innerText === "X" && devyni.innerText === "X") {
         title.innerText = "X laimėjo";
         document.querySelector('.vienas').disabled = 'true';
@@ -192,9 +229,9 @@ function duClick() {
         keturi.innerText === "O" && penki.innerText === "O" && sesi.innerText === "O" ||
         septyni.innerText === "O" && astuoni.innerText === "O" && devyni.innerText === "O" ||
         vienas.innerText === "O" && penki.innerText === "O" && devyni.innerText === "O" ||
-        septyni.innerText === "O" && penki.innerText === "O" && trys.innerText === "O" || 
-        vienas.innerText === "O" && keturi.innerText === "O" && septyni.innerText === "O" || 
-        du.innerText === "O" && penki.innerText === "O" && astuoni.innerText === "O" || 
+        septyni.innerText === "O" && penki.innerText === "O" && trys.innerText === "O" ||
+        vienas.innerText === "O" && keturi.innerText === "O" && septyni.innerText === "O" ||
+        du.innerText === "O" && penki.innerText === "O" && astuoni.innerText === "O" ||
         trys.innerText === "O" && sesi.innerText === "O" && devyni.innerText === "O") {
         title.innerText = "O laimėjo";
         document.querySelector('.vienas').disabled = 'true';
@@ -210,9 +247,9 @@ function duClick() {
         keturi.innerText === "X" && penki.innerText === "X" && sesi.innerText === "X" ||
         septyni.innerText === "X" && astuoni.innerText === "X" && devyni.innerText === "X" ||
         vienas.innerText === "X" && penki.innerText === "X" && devyni.innerText === "X" ||
-        septyni.innerText === "X" && penki.innerText === "X" && trys.innerText === "X" || 
-        vienas.innerText === "X" && keturi.innerText === "X" && septyni.innerText === "X" || 
-        du.innerText === "X" && penki.innerText === "X" && astuoni.innerText === "X" || 
+        septyni.innerText === "X" && penki.innerText === "X" && trys.innerText === "X" ||
+        vienas.innerText === "X" && keturi.innerText === "X" && septyni.innerText === "X" ||
+        du.innerText === "X" && penki.innerText === "X" && astuoni.innerText === "X" ||
         trys.innerText === "X" && sesi.innerText === "X" && devyni.innerText === "X") {
         title.innerText = "X laimėjo";
         document.querySelector('.vienas').disabled = 'true';
@@ -251,9 +288,9 @@ function trysClick() {
         keturi.innerText === "O" && penki.innerText === "O" && sesi.innerText === "O" ||
         septyni.innerText === "O" && astuoni.innerText === "O" && devyni.innerText === "O" ||
         vienas.innerText === "O" && penki.innerText === "O" && devyni.innerText === "O" ||
-        septyni.innerText === "O" && penki.innerText === "O" && trys.innerText === "O" || 
-        vienas.innerText === "O" && keturi.innerText === "O" && septyni.innerText === "O" || 
-        du.innerText === "O" && penki.innerText === "O" && astuoni.innerText === "O" || 
+        septyni.innerText === "O" && penki.innerText === "O" && trys.innerText === "O" ||
+        vienas.innerText === "O" && keturi.innerText === "O" && septyni.innerText === "O" ||
+        du.innerText === "O" && penki.innerText === "O" && astuoni.innerText === "O" ||
         trys.innerText === "O" && sesi.innerText === "O" && devyni.innerText === "O") {
         title.innerText = "O laimėjo";
         document.querySelector('.vienas').disabled = 'true';
@@ -269,9 +306,9 @@ function trysClick() {
         keturi.innerText === "X" && penki.innerText === "X" && sesi.innerText === "X" ||
         septyni.innerText === "X" && astuoni.innerText === "X" && devyni.innerText === "X" ||
         vienas.innerText === "X" && penki.innerText === "X" && devyni.innerText === "X" ||
-        septyni.innerText === "X" && penki.innerText === "X" && trys.innerText === "X" || 
-        vienas.innerText === "X" && keturi.innerText === "X" && septyni.innerText === "X" || 
-        du.innerText === "X" && penki.innerText === "X" && astuoni.innerText === "X" || 
+        septyni.innerText === "X" && penki.innerText === "X" && trys.innerText === "X" ||
+        vienas.innerText === "X" && keturi.innerText === "X" && septyni.innerText === "X" ||
+        du.innerText === "X" && penki.innerText === "X" && astuoni.innerText === "X" ||
         trys.innerText === "X" && sesi.innerText === "X" && devyni.innerText === "X") {
         title.innerText = "X laimėjo";
         document.querySelector('.vienas').disabled = 'true';
@@ -310,9 +347,9 @@ function keturiClick() {
         keturi.innerText === "O" && penki.innerText === "O" && sesi.innerText === "O" ||
         septyni.innerText === "O" && astuoni.innerText === "O" && devyni.innerText === "O" ||
         vienas.innerText === "O" && penki.innerText === "O" && devyni.innerText === "O" ||
-        septyni.innerText === "O" && penki.innerText === "O" && trys.innerText === "O" || 
-        vienas.innerText === "O" && keturi.innerText === "O" && septyni.innerText === "O" || 
-        du.innerText === "O" && penki.innerText === "O" && astuoni.innerText === "O" || 
+        septyni.innerText === "O" && penki.innerText === "O" && trys.innerText === "O" ||
+        vienas.innerText === "O" && keturi.innerText === "O" && septyni.innerText === "O" ||
+        du.innerText === "O" && penki.innerText === "O" && astuoni.innerText === "O" ||
         trys.innerText === "O" && sesi.innerText === "O" && devyni.innerText === "O") {
         title.innerText = "O laimėjo";
         document.querySelector('.vienas').disabled = 'true';
@@ -328,9 +365,9 @@ function keturiClick() {
         keturi.innerText === "X" && penki.innerText === "X" && sesi.innerText === "X" ||
         septyni.innerText === "X" && astuoni.innerText === "X" && devyni.innerText === "X" ||
         vienas.innerText === "X" && penki.innerText === "X" && devyni.innerText === "X" ||
-        septyni.innerText === "X" && penki.innerText === "X" && trys.innerText === "X" || 
-        vienas.innerText === "X" && keturi.innerText === "X" && septyni.innerText === "X" || 
-        du.innerText === "X" && penki.innerText === "X" && astuoni.innerText === "X" || 
+        septyni.innerText === "X" && penki.innerText === "X" && trys.innerText === "X" ||
+        vienas.innerText === "X" && keturi.innerText === "X" && septyni.innerText === "X" ||
+        du.innerText === "X" && penki.innerText === "X" && astuoni.innerText === "X" ||
         trys.innerText === "X" && sesi.innerText === "X" && devyni.innerText === "X") {
         title.innerText = "X laimėjo";
         document.querySelector('.vienas').disabled = 'true';
@@ -369,9 +406,9 @@ function penkiClick() {
         keturi.innerText === "O" && penki.innerText === "O" && sesi.innerText === "O" ||
         septyni.innerText === "O" && astuoni.innerText === "O" && devyni.innerText === "O" ||
         vienas.innerText === "O" && penki.innerText === "O" && devyni.innerText === "O" ||
-        septyni.innerText === "O" && penki.innerText === "O" && trys.innerText === "O" || 
-        vienas.innerText === "O" && keturi.innerText === "O" && septyni.innerText === "O" || 
-        du.innerText === "O" && penki.innerText === "O" && astuoni.innerText === "O" || 
+        septyni.innerText === "O" && penki.innerText === "O" && trys.innerText === "O" ||
+        vienas.innerText === "O" && keturi.innerText === "O" && septyni.innerText === "O" ||
+        du.innerText === "O" && penki.innerText === "O" && astuoni.innerText === "O" ||
         trys.innerText === "O" && sesi.innerText === "O" && devyni.innerText === "O") {
         title.innerText = "O laimėjo";
         document.querySelector('.vienas').disabled = 'true';
@@ -387,9 +424,9 @@ function penkiClick() {
         keturi.innerText === "X" && penki.innerText === "X" && sesi.innerText === "X" ||
         septyni.innerText === "X" && astuoni.innerText === "X" && devyni.innerText === "X" ||
         vienas.innerText === "X" && penki.innerText === "X" && devyni.innerText === "X" ||
-        septyni.innerText === "X" && penki.innerText === "X" && trys.innerText === "X" || 
-        vienas.innerText === "X" && keturi.innerText === "X" && septyni.innerText === "X" || 
-        du.innerText === "X" && penki.innerText === "X" && astuoni.innerText === "X" || 
+        septyni.innerText === "X" && penki.innerText === "X" && trys.innerText === "X" ||
+        vienas.innerText === "X" && keturi.innerText === "X" && septyni.innerText === "X" ||
+        du.innerText === "X" && penki.innerText === "X" && astuoni.innerText === "X" ||
         trys.innerText === "X" && sesi.innerText === "X" && devyni.innerText === "X") {
         title.innerText = "X laimėjo";
         document.querySelector('.vienas').disabled = 'true';
@@ -428,9 +465,9 @@ function sesiClick() {
         keturi.innerText === "O" && penki.innerText === "O" && sesi.innerText === "O" ||
         septyni.innerText === "O" && astuoni.innerText === "O" && devyni.innerText === "O" ||
         vienas.innerText === "O" && penki.innerText === "O" && devyni.innerText === "O" ||
-        septyni.innerText === "O" && penki.innerText === "O" && trys.innerText === "O" || 
-        vienas.innerText === "O" && keturi.innerText === "O" && septyni.innerText === "O" || 
-        du.innerText === "O" && penki.innerText === "O" && astuoni.innerText === "O" || 
+        septyni.innerText === "O" && penki.innerText === "O" && trys.innerText === "O" ||
+        vienas.innerText === "O" && keturi.innerText === "O" && septyni.innerText === "O" ||
+        du.innerText === "O" && penki.innerText === "O" && astuoni.innerText === "O" ||
         trys.innerText === "O" && sesi.innerText === "O" && devyni.innerText === "O") {
         title.innerText = "O laimėjo";
         document.querySelector('.vienas').disabled = 'true';
@@ -446,9 +483,9 @@ function sesiClick() {
         keturi.innerText === "X" && penki.innerText === "X" && sesi.innerText === "X" ||
         septyni.innerText === "X" && astuoni.innerText === "X" && devyni.innerText === "X" ||
         vienas.innerText === "X" && penki.innerText === "X" && devyni.innerText === "X" ||
-        septyni.innerText === "X" && penki.innerText === "X" && trys.innerText === "X" || 
-        vienas.innerText === "X" && keturi.innerText === "X" && septyni.innerText === "X" || 
-        du.innerText === "X" && penki.innerText === "X" && astuoni.innerText === "X" || 
+        septyni.innerText === "X" && penki.innerText === "X" && trys.innerText === "X" ||
+        vienas.innerText === "X" && keturi.innerText === "X" && septyni.innerText === "X" ||
+        du.innerText === "X" && penki.innerText === "X" && astuoni.innerText === "X" ||
         trys.innerText === "X" && sesi.innerText === "X" && devyni.innerText === "X") {
         title.innerText = "X laimėjo";
         document.querySelector('.vienas').disabled = 'true';
@@ -487,9 +524,9 @@ function septyniClick() {
         keturi.innerText === "O" && penki.innerText === "O" && sesi.innerText === "O" ||
         septyni.innerText === "O" && astuoni.innerText === "O" && devyni.innerText === "O" ||
         vienas.innerText === "O" && penki.innerText === "O" && devyni.innerText === "O" ||
-        septyni.innerText === "O" && penki.innerText === "O" && trys.innerText === "O" || 
-        vienas.innerText === "O" && keturi.innerText === "O" && septyni.innerText === "O" || 
-        du.innerText === "O" && penki.innerText === "O" && astuoni.innerText === "O" || 
+        septyni.innerText === "O" && penki.innerText === "O" && trys.innerText === "O" ||
+        vienas.innerText === "O" && keturi.innerText === "O" && septyni.innerText === "O" ||
+        du.innerText === "O" && penki.innerText === "O" && astuoni.innerText === "O" ||
         trys.innerText === "O" && sesi.innerText === "O" && devyni.innerText === "O") {
         title.innerText = "O laimėjo";
         document.querySelector('.vienas').disabled = 'true';
@@ -505,9 +542,9 @@ function septyniClick() {
         keturi.innerText === "X" && penki.innerText === "X" && sesi.innerText === "X" ||
         septyni.innerText === "X" && astuoni.innerText === "X" && devyni.innerText === "X" ||
         vienas.innerText === "X" && penki.innerText === "X" && devyni.innerText === "X" ||
-        septyni.innerText === "X" && penki.innerText === "X" && trys.innerText === "X" || 
-        vienas.innerText === "X" && keturi.innerText === "X" && septyni.innerText === "X" || 
-        du.innerText === "X" && penki.innerText === "X" && astuoni.innerText === "X" || 
+        septyni.innerText === "X" && penki.innerText === "X" && trys.innerText === "X" ||
+        vienas.innerText === "X" && keturi.innerText === "X" && septyni.innerText === "X" ||
+        du.innerText === "X" && penki.innerText === "X" && astuoni.innerText === "X" ||
         trys.innerText === "X" && sesi.innerText === "X" && devyni.innerText === "X") {
         title.innerText = "X laimėjo";
         document.querySelector('.vienas').disabled = 'true';
@@ -546,9 +583,9 @@ function astuoniClick() {
         keturi.innerText === "O" && penki.innerText === "O" && sesi.innerText === "O" ||
         septyni.innerText === "O" && astuoni.innerText === "O" && devyni.innerText === "O" ||
         vienas.innerText === "O" && penki.innerText === "O" && devyni.innerText === "O" ||
-        septyni.innerText === "O" && penki.innerText === "O" && trys.innerText === "O" || 
-        vienas.innerText === "O" && keturi.innerText === "O" && septyni.innerText === "O" || 
-        du.innerText === "O" && penki.innerText === "O" && astuoni.innerText === "O" || 
+        septyni.innerText === "O" && penki.innerText === "O" && trys.innerText === "O" ||
+        vienas.innerText === "O" && keturi.innerText === "O" && septyni.innerText === "O" ||
+        du.innerText === "O" && penki.innerText === "O" && astuoni.innerText === "O" ||
         trys.innerText === "O" && sesi.innerText === "O" && devyni.innerText === "O") {
         title.innerText = "O laimėjo";
         document.querySelector('.vienas').disabled = 'true';
@@ -564,9 +601,9 @@ function astuoniClick() {
         keturi.innerText === "X" && penki.innerText === "X" && sesi.innerText === "X" ||
         septyni.innerText === "X" && astuoni.innerText === "X" && devyni.innerText === "X" ||
         vienas.innerText === "X" && penki.innerText === "X" && devyni.innerText === "X" ||
-        septyni.innerText === "X" && penki.innerText === "X" && trys.innerText === "X" || 
-        vienas.innerText === "X" && keturi.innerText === "X" && septyni.innerText === "X" || 
-        du.innerText === "X" && penki.innerText === "X" && astuoni.innerText === "X" || 
+        septyni.innerText === "X" && penki.innerText === "X" && trys.innerText === "X" ||
+        vienas.innerText === "X" && keturi.innerText === "X" && septyni.innerText === "X" ||
+        du.innerText === "X" && penki.innerText === "X" && astuoni.innerText === "X" ||
         trys.innerText === "X" && sesi.innerText === "X" && devyni.innerText === "X") {
         title.innerText = "X laimėjo";
         document.querySelector('.vienas').disabled = 'true';
@@ -605,9 +642,9 @@ function devyniClick() {
         keturi.innerText === "O" && penki.innerText === "O" && sesi.innerText === "O" ||
         septyni.innerText === "O" && astuoni.innerText === "O" && devyni.innerText === "O" ||
         vienas.innerText === "O" && penki.innerText === "O" && devyni.innerText === "O" ||
-        septyni.innerText === "O" && penki.innerText === "O" && trys.innerText === "O" || 
-        vienas.innerText === "O" && keturi.innerText === "O" && septyni.innerText === "O" || 
-        du.innerText === "O" && penki.innerText === "O" && astuoni.innerText === "O" || 
+        septyni.innerText === "O" && penki.innerText === "O" && trys.innerText === "O" ||
+        vienas.innerText === "O" && keturi.innerText === "O" && septyni.innerText === "O" ||
+        du.innerText === "O" && penki.innerText === "O" && astuoni.innerText === "O" ||
         trys.innerText === "O" && sesi.innerText === "O" && devyni.innerText === "O") {
         title.innerText = "O laimėjo";
         document.querySelector('.vienas').disabled = 'true';
@@ -623,9 +660,9 @@ function devyniClick() {
         keturi.innerText === "X" && penki.innerText === "X" && sesi.innerText === "X" ||
         septyni.innerText === "X" && astuoni.innerText === "X" && devyni.innerText === "X" ||
         vienas.innerText === "X" && penki.innerText === "X" && devyni.innerText === "X" ||
-        septyni.innerText === "X" && penki.innerText === "X" && trys.innerText === "X" || 
-        vienas.innerText === "X" && keturi.innerText === "X" && septyni.innerText === "X" || 
-        du.innerText === "X" && penki.innerText === "X" && astuoni.innerText === "X" || 
+        septyni.innerText === "X" && penki.innerText === "X" && trys.innerText === "X" ||
+        vienas.innerText === "X" && keturi.innerText === "X" && septyni.innerText === "X" ||
+        du.innerText === "X" && penki.innerText === "X" && astuoni.innerText === "X" ||
         trys.innerText === "X" && sesi.innerText === "X" && devyni.innerText === "X") {
         title.innerText = "X laimėjo";
         document.querySelector('.vienas').disabled = 'true';
@@ -641,7 +678,85 @@ function devyniClick() {
 }
 
 function newGameClick() {
-    console.log("wertyui");
+    console.log("bandymas testas");
+
+    newGameSauga = true;
+    patikra = false;
+
+    document.querySelector('.vienas').disabled = false;
+    deactivateVienas.style.background = 'orange';
+    deactivateVienas.style.color = 'orange';
+    title.innerText = ""
+    vienas.innerText = "_"
+    randomm = 0;
+
+    document.querySelector('.du').disabled = false;
+    deactivateDu.style.background = 'orange';
+    deactivateDu.style.color = 'orange';
+    title.innerText = ""
+    du.innerText = "_"
+    randomm = 0;
+
+    document.querySelector('.trys').disabled = false;
+    deactivateTrys.style.background = 'orange';
+    deactivateTrys.style.color = 'orange';
+    title.innerText = ""
+    trys.innerText = "_"
+    randomm = 0;
+
+    document.querySelector('.keturi').disabled = false;
+    deactivateKeturi.style.background = 'orange';
+    deactivateKeturi.style.color = 'orange';
+    title.innerText = ""
+    keturi.innerText = "_"
+    randomm = 0;
+
+    document.querySelector('.penki').disabled = false;
+    deactivatePenki.style.background = 'orange';
+    deactivatePenki.style.color = 'orange';
+    title.innerText = ""
+    penki.innerText = "_"
+    randomm = 0;
+
+    document.querySelector('.sesi').disabled = false;
+    deactivateSesi.style.background = 'orange';
+    deactivateSesi.style.color = 'orange';
+    title.innerText = ""
+    sesi.innerText = "_"
+    randomm = 0;
+
+    document.querySelector('.septyni').disabled = false;
+    deactivateSeptyni.style.background = 'orange';
+    deactivateSeptyni.style.color = 'orange';
+    title.innerText = ""
+    septyni.innerText = "_"
+    randomm = 0;
+
+    document.querySelector('.astuoni').disabled = false;
+    deactivateAstuoni.style.background = 'orange';
+    deactivateAstuoni.style.color = 'orange';
+    title.innerText = ""
+    astuoni.innerText = "_"
+    randomm = 0;
+
+    document.querySelector('.devyni').disabled = false;
+    deactivateDevyni.style.background = 'orange';
+    deactivateDevyni.style.color = 'orange';
+    title.innerText = ""
+    devyni.innerText = "_"
+    randomm = 0;
+
+
+    document.querySelector('.random').disabled = false;
+    document.querySelector('.x').disabled = false;
+    document.querySelector('.o').disabled = false;
+
+    deactivateRandom.style.background = 'yellowgreen';
+    deactivateX.style.background = 'yellowgreen';
+    deactivateO.style.background = 'yellowgreen';
+
+    document.querySelector('.new_game').disabled = true;
+    deactivateNewGame.style.background = 'grey';
 }
 
 
