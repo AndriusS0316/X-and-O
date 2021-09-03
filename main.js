@@ -755,6 +755,9 @@ function newGameClick() {
     deactivateX.style.background = 'yellowgreen';
     deactivateO.style.background = 'yellowgreen';
 
+    // deactivateRandom.classList.add('random');
+    // deactivateRandom.classList.add('random:hover');
+
     document.querySelector('.new_game').disabled = true;
     deactivateNewGame.style.background = 'grey';
 }
