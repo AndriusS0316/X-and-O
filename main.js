@@ -4,6 +4,8 @@ let randomm;
 let patikra = false;
 let newGameSauga = true;
 
+let lygiosios = true;
+
 
 
 const title = document.querySelector('.title');
@@ -202,6 +204,12 @@ function vienasClick() {
         document.querySelector('.septyni').disabled = 'true';
         document.querySelector('.astuoni').disabled = 'true';
         document.querySelector('.devyni').disabled = 'true';
+
+
+    } else if (lygiosios && vienas.innerText !== "_" && du.innerText !== "_" && trys.innerText !== "_" &&
+        keturi.innerText !== "_" && penki.innerText !== "_" && sesi.innerText !== "_" &&
+        septyni.innerText !== "_" && astuoni.innerText !== "_" && devyni.innerText !== "_") {
+        title.innerText = "draw";
     }
 }
 function duClick() {
@@ -261,6 +269,12 @@ function duClick() {
         document.querySelector('.septyni').disabled = 'true';
         document.querySelector('.astuoni').disabled = 'true';
         document.querySelector('.devyni').disabled = 'true';
+
+
+    } else if (lygiosios && vienas.innerText !== "_" && du.innerText !== "_" && trys.innerText !== "_" &&
+        keturi.innerText !== "_" && penki.innerText !== "_" && sesi.innerText !== "_" &&
+        septyni.innerText !== "_" && astuoni.innerText !== "_" && devyni.innerText !== "_") {
+        title.innerText = "draw";
     }
 }
 function trysClick() {
@@ -320,6 +334,12 @@ function trysClick() {
         document.querySelector('.septyni').disabled = 'true';
         document.querySelector('.astuoni').disabled = 'true';
         document.querySelector('.devyni').disabled = 'true';
+
+
+    } else if (lygiosios && vienas.innerText !== "_" && du.innerText !== "_" && trys.innerText !== "_" &&
+        keturi.innerText !== "_" && penki.innerText !== "_" && sesi.innerText !== "_" &&
+        septyni.innerText !== "_" && astuoni.innerText !== "_" && devyni.innerText !== "_") {
+        title.innerText = "draw";
     }
 }
 function keturiClick() {
@@ -379,6 +399,12 @@ function keturiClick() {
         document.querySelector('.septyni').disabled = 'true';
         document.querySelector('.astuoni').disabled = 'true';
         document.querySelector('.devyni').disabled = 'true';
+
+
+    } else if (lygiosios && vienas.innerText !== "_" && du.innerText !== "_" && trys.innerText !== "_" &&
+        keturi.innerText !== "_" && penki.innerText !== "_" && sesi.innerText !== "_" &&
+        septyni.innerText !== "_" && astuoni.innerText !== "_" && devyni.innerText !== "_") {
+        title.innerText = "draw";
     }
 }
 function penkiClick() {
@@ -438,6 +464,12 @@ function penkiClick() {
         document.querySelector('.septyni').disabled = 'true';
         document.querySelector('.astuoni').disabled = 'true';
         document.querySelector('.devyni').disabled = 'true';
+
+
+    } else if (lygiosios && vienas.innerText !== "_" && du.innerText !== "_" && trys.innerText !== "_" &&
+        keturi.innerText !== "_" && penki.innerText !== "_" && sesi.innerText !== "_" &&
+        septyni.innerText !== "_" && astuoni.innerText !== "_" && devyni.innerText !== "_") {
+        title.innerText = "draw";
     }
 }
 function sesiClick() {
@@ -497,6 +529,12 @@ function sesiClick() {
         document.querySelector('.septyni').disabled = 'true';
         document.querySelector('.astuoni').disabled = 'true';
         document.querySelector('.devyni').disabled = 'true';
+
+
+    } else if (lygiosios && vienas.innerText !== "_" && du.innerText !== "_" && trys.innerText !== "_" &&
+        keturi.innerText !== "_" && penki.innerText !== "_" && sesi.innerText !== "_" &&
+        septyni.innerText !== "_" && astuoni.innerText !== "_" && devyni.innerText !== "_") {
+        title.innerText = "draw";
     }
 }
 function septyniClick() {
@@ -556,6 +594,12 @@ function septyniClick() {
         document.querySelector('.septyni').disabled = 'true';
         document.querySelector('.astuoni').disabled = 'true';
         document.querySelector('.devyni').disabled = 'true';
+
+
+    } else if (lygiosios && vienas.innerText !== "_" && du.innerText !== "_" && trys.innerText !== "_" &&
+        keturi.innerText !== "_" && penki.innerText !== "_" && sesi.innerText !== "_" &&
+        septyni.innerText !== "_" && astuoni.innerText !== "_" && devyni.innerText !== "_") {
+        title.innerText = "draw";
     }
 }
 function astuoniClick() {
@@ -615,6 +659,12 @@ function astuoniClick() {
         document.querySelector('.septyni').disabled = 'true';
         document.querySelector('.astuoni').disabled = 'true';
         document.querySelector('.devyni').disabled = 'true';
+
+
+    } else if (lygiosios && vienas.innerText !== "_" && du.innerText !== "_" && trys.innerText !== "_" &&
+        keturi.innerText !== "_" && penki.innerText !== "_" && sesi.innerText !== "_" &&
+        septyni.innerText !== "_" && astuoni.innerText !== "_" && devyni.innerText !== "_") {
+        title.innerText = "draw";
     }
 }
 function devyniClick() {
@@ -674,6 +724,12 @@ function devyniClick() {
         document.querySelector('.septyni').disabled = 'true';
         document.querySelector('.astuoni').disabled = 'true';
         document.querySelector('.devyni').disabled = 'true';
+
+
+    } else if (lygiosios && vienas.innerText !== "_" && du.innerText !== "_" && trys.innerText !== "_" &&
+        keturi.innerText !== "_" && penki.innerText !== "_" && sesi.innerText !== "_" &&
+        septyni.innerText !== "_" && astuoni.innerText !== "_" && devyni.innerText !== "_") {
+        title.innerText = "draw";
     }
 }
 
@@ -761,6 +817,36 @@ function newGameClick() {
     document.querySelector('.new_game').disabled = true;
     deactivateNewGame.style.background = 'grey';
 }
+
+
+
+
+// const gamee = document.querySelector('.new_game');
+
+// function mouseOver() {
+//     style.backgroundcolor = "white";
+// }
+
+// function mouseOut() {
+//     style.backgroundcolor = "black";
+// }
+
+// gamee.addEventListener('hover', mouseOver);
+// gamee.addEventListener('hover', mouseOut);
+
+
+
+
+const new_game = document.querySelector('.new_game');
+
+new_game.addEventListener('mouseover', function() {
+    new_game.style="background: turquoise;";
+})
+
+new_game.addEventListener('mouseout', function() {
+    new_game.style="background: yellowgreen;";
+})
+
 
 
 
