@@ -1,0 +1,198 @@
+.body {
+    background-color: #eee;
+}
+
+form {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+button {
+    padding: 15px 40px;
+    font-size: 50px;
+    line-height: 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 8px 10px #0002;
+}
+
+.random {
+    font-size: 40px;
+    cursor: pointer;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: yellowgreen;
+    color: black;
+}
+.random:hover {
+    background-color: turquoise;
+}
+.x {
+    font-size: 27px;
+    cursor: pointer;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    background-color: yellowgreen;
+    color: black;
+}
+.x:hover {
+    background-color: turquoise;
+}
+.o {
+    font-size: 27px;
+    cursor: pointer;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 15%;
+    left: 83%;
+    transform: translate(-50%, -50%);
+    background-color: yellowgreen;
+    color: black;
+}
+.o:hover {
+    background-color: turquoise;
+}
+.title {
+    font-size: 40px;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.vienas {
+    cursor: pointer;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 44%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    background-color: orange;
+    color: orange;
+}
+.du {
+    cursor: pointer;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: orange;
+    color: orange;
+}
+.trys {
+    cursor: pointer;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 44%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    background-color: orange;
+    color: orange;
+}
+.keturi {
+    cursor: pointer;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 57%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    background-color: orange;
+    color: orange;
+}
+.penki {
+    cursor: pointer;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: orange;
+    color: orange;
+}
+.sesi {
+    cursor: pointer;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 57%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    background-color: orange;
+    color: orange;
+}
+.septyni {
+    cursor: pointer;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    background-color: orange;
+    color: orange;
+}
+.astuoni {
+    cursor: pointer;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: orange;
+    color: orange;
+}
+.devyni {
+    cursor: pointer;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 70%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    background-color: orange;
+    color: orange;
+}
+
+.vienas:hover, .du:hover, .trys:hover, .keturi:hover, .penki:hover, .sesi:hover, .septyni:hover, .astuoni:hover, .devyni:hover {
+    background-color: yellow;
+    color: yellow;
+}
+
+.new_game {
+    cursor: pointer;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: yellowgreen;
+    color: black;
+    font-size: 40px;
+}
+.new_game:hover {
+    background-color: turquoise;
+}
